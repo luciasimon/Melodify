@@ -25,9 +25,20 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+<activity android:name=".UserActivity">
+
+        </activity>
+        <activity android:name=".HomeActivity">
+
+        </activity>
+
+        <activity android:name=".LogInPage">
+
+        </activity>
+
+        <activity android:name=".PlayingSongActivity">
+
+        </activity>
     </application>
 
 </manifest>

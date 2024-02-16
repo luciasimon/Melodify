@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewCancionHistorial"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#00414558"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imageViewCancionHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageViewMusicFrecuency"
+        android:layout_width="261dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewCancionHistorial"
+        app:layout_constraintStart_toEndOf="@+id/cardViewCancionHistorial"
+        app:srcCompat="@drawable/sound_frecuency_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/textViewNombreCancion"
+        android:layout_width="240dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="Nombre de la canción"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewCancionHistorial"
+        app:layout_constraintStart_toEndOf="@+id/cardViewCancionHistorial" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

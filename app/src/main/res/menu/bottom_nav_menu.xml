@@ -1,18 +1,18 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/categoria"
-        android:title="Categoría"
-        android:icon="@drawable/categoria"/>
+<?xml version="1.0" encoding="utf-8"?>
+        android:icon="@drawable/four_squares_button_of_view_options_svgrepo_com"/>
+
     <item
         android:id="@+id/principal"
         android:title="Principal"
-        android:icon="@drawable/principal"/>
+        android:icon="@drawable/basic_home_svgrepo_com"/>
+
     <item
         android:id="@+id/playlist"
         android:title="Playlist"
-        android:icon="@drawable/playlist"/>
+        android:icon="@drawable/list_ul_alt_svgrepo_com"/>
+
     <item
         android:id="@+id/perfil"
         android:title="Perfil"
-        android:icon="@drawable/perfil"/>
+        android:icon="@drawable/avatar_default_svgrepo_com"/>
 </menu>

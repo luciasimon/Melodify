@@ -14,17 +14,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        // Infla el layout usando el binding
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+         val intent = Intent(this, UserActivity::class.java)
+//        val intent = Intent(this, PlayingSongActivity::class.java)
+//        val intent = Intent(this, LogInPage::class.java)
+//        val intent = Intent(this, HomeActivity::class.java)
 
-        // Crear intent para la actividad de la lista de reproducción
-        val intent = Intent(this, PlayList::class.java)
         startActivity(intent)
-
-        // binding.menu1.setSelectedItemId(R.id.principal);
-        //setupBottomNavigationView()
-
     }
+
+
 }
