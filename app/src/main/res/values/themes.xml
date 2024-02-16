@@ -1,10 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Melodify" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="android:navigationBarColor">@color/purple</item>
+
     </style>
 
+    <style name="Theme.Melodify" parent="Base.Theme.Melodify" />
+
+    <style name="Theme.Melodify.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/blue</item>
+        <item name="android:height">35dp</item>
+        <item name="android:width">60dp</item>
     <style name="Theme.Melodify" parent="Base.Theme.Melodify" >
     </style>
 </resources>
