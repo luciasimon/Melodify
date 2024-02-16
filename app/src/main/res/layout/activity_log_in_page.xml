@@ -16,7 +16,7 @@
         android:layout_height="202dp"
         android:layout_gravity="center"
         android:layout_marginTop="38dp"
-        tools:srcCompat="@drawable/logomelodify" />
+        android:src="@drawable/logomelodify" />
 
     <TextView
         android:id="@+id/textInicioSesion"

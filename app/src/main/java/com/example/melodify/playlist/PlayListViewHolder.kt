@@ -1,14 +1,12 @@
-import android.content.Context
+
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.RequestOptions
 import com.example.melodify.databinding.MusicItemBinding
 import com.example.melodify.R
 import com.example.melodify.playlist.Music
-import com.squareup.picasso.Picasso
 
 class PlayListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -22,7 +20,7 @@ class PlayListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         // Cargar imagen con Glide desde drawable
         Glide.with(itemView.context)
             .load(musicModel.img) // Aquí musicModel.img es el ID del recurso en drawable
-            .apply(RequestOptions().error(R.drawable.img1))
+            .apply(com.bumptech.glide.request.RequestOptions().error(R.drawable.img1))
             .diskCacheStrategy(DiskCacheStrategy.ALL) // Opcional, dependiendo de tus necesidades de caché
             .into(binding.ivMusic)
         Log.d("sofia",musicModel.img.toString())

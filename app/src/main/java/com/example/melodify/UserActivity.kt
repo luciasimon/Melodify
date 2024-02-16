@@ -23,7 +23,6 @@ class UserActivity: AppCompatActivity() {
 
         Glide.with(binding.imageViewImagenUsuario.context).load(R.drawable.avatar_default_svgrepo_com).into(binding.imageViewImagenUsuario)
 
-
         initRecyclerView()
     }
 
