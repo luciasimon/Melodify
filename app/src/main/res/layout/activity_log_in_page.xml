@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <!-- Imagen pequeña en el centro -->
+
+    <!-- EditText para el inicio de sesión -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="38dp"
+        tools:srcCompat="@drawable/logomelodify" />
+
+    <TextView
+        android:id="@+id/textInicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:background="#00FFFFFF"
+        android:text="Inicio de sesión"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <!-- LinearLayout con EditText y ImageView para Usuario -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:background="#72FFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_account_circle_24" />
+
+    </LinearLayout>
+
+    <!-- LinearLayout con EditText y ImageView para Contraseña -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:background="#6BFFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:hint="Contraseña"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColorHint="#FFFFFF" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_visibility_24" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonIniciarSesion"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:padding="15dp"
+        android:text="Iniciar sesión"
+        android:textColor="#9C27B0"
+        android:textSize="20dp" />
+
+    <!-- TextView para registro -->
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="Si no estás registrado, pincha aquí"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+</LinearLayout>
