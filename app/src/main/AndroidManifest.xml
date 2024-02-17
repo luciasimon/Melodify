@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Melodify"
         tools:targetApi="31">
         <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
             android:name=".playlist.PlayList"
             android:exported="false" />
         <activity
@@ -24,18 +27,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-<activity android:name=".UserActivity">
+        <activity android:name=".UserActivity">
 
         </activity>
         <activity android:name=".HomeActivity">
 
         </activity>
-
         <activity android:name=".LogInPage">
 
         </activity>
-
         <activity android:name=".PlayingSongActivity">
 
         </activity>

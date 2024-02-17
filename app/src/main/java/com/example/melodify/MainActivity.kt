@@ -7,7 +7,6 @@ import android.os.Bundle
 import com.example.melodify.databinding.ActivityMainBinding
 import com.example.melodify.databinding.ActivityPlayListBinding
 import com.example.melodify.playlist.PlayList
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -18,8 +17,10 @@ class MainActivity : AppCompatActivity() {
 
          //val intent = Intent(this, UserActivity::class.java)
 //        val intent = Intent(this, PlayingSongActivity::class.java)
-       val intent = Intent(this, LogInPage::class.java)
+ //      val intent = Intent(this, LogInPage::class.java)
 //       val intent = Intent(this, HomeActivity::class.java)
+ //      val intent = Intent(this, PlayList::class.java)
+       val intent = Intent(this, RegistroActivity::class.java)
 
         startActivity(intent)
     }
